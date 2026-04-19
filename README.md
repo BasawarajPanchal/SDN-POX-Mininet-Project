@@ -84,7 +84,7 @@ h1 ping h2
 pingall
 ```
 
-#### 📊 Flow Table Inspection
+####  Flow Table Inspection
 
 ```bash
 sh ovs-ofctl dump-flows s1
