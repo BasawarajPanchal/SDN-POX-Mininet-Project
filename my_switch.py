@@ -15,7 +15,7 @@ def _handle_PacketIn(event):
     # Learn MAC address
     mac_to_port[dpid][packet.src] = event.port
 
-    # 🚫 Firewall: block h1 → h2
+    # Firewall: block h1 → h2
     if str(packet.src) == "00:00:00:00:00:01" and str(packet.dst) == "00:00:00:00:00:02":
         log.info("Blocked traffic from h1 to h2")
         return
